@@ -11,7 +11,7 @@ def main():
     
     st.markdown(html_temp,unsafe_allow_html=True)
     
-    model = joblib.load("P2 Health Insurance Cost Prediction\model_gbr")
+    model = joblib.load("model_gbr")
     
     p1 = st.slider("Enter your age",18,100)
     s1 = st.selectbox('Sex',('Male','Female'))
